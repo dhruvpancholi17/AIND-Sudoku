@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: *The constraint here is if there are two boxes having same value(possible), and are peers to each other; then both of them are supposed to have one of the two values. For this we take intersection of the peers of the two naked pairs, and remove naked pair values from all the common peers.*
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: *We already have all the units on which constraint is applied, that every unit can have values 1-9 exactly once. Adding two more diagonal units will also check for contraint satisfaction while solving; this is simply done by adding the diagonal units to the list of units, and the algorithm consider for these two additional constraints automatically.*
 
 ### Install
 
